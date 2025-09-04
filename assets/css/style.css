@@ -52,6 +52,43 @@ body {
 
 .form-image-main {
     width: 400px;
+    animation: animate 3s linear infinite;
+}
+
+.rocket {
+    animation: animate 1.5s linear infinite;
+}
+
+.cloud {
+    animation: animate 2.5s linear infinite;
+}
+
+.stars {
+    animation: animate 3.5s linear infinite;
+}
+
+.spring {
+    animation: animate 3s linear infinite;
+}
+
+.dots {
+    animation: animate 2s linear infinite;
+}
+
+.coin {
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-5px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
 }
 
 .form-image {
@@ -75,6 +112,7 @@ body {
     position: relative;
     width: 45%;
     padding: 20px;
+    overflow: hidden;
 }
 
 .btn-box {
@@ -229,4 +267,16 @@ body {
 
 .register-form .form-title {
     margin-block: 40px 20px;
+}
+
+@media (max-width: 892px) {
+    .form-container {
+        width: 400px;
+    }
+    .col-1 {
+        display: none;
+    }
+    .col-2 {
+        width: 100%;
+    }
 }
